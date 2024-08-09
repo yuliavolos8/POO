@@ -20,7 +20,7 @@ public class Principal {
 			}
 		});
 		System.out.println("-------------------------------------------------------");
-
+//metodo para añadir libro 
 		try {
 			Libro l = new Libro(12311, "Susana Delgado", "Amanecer");
 			aniadirLibro(libros, l);
