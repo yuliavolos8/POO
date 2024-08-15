@@ -2,7 +2,7 @@ package enumParaTallas;
 
 public class Ropa {
 	public enum Talla {
-		XS, S, M, L, XL
+		XS, S, M, L, XL, XXL
 	};
 
 	private String prenda;
