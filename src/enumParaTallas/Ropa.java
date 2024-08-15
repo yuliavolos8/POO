@@ -5,16 +5,24 @@ public class Ropa {
 		XS, S, M, L, XL, XXL
 	};
 
-	private String prenda;
+	public enum Tipo {
+		Vestido, Pantalon, Falda, Camisa, Camiseta, Chaqueta
+	};
+
+	private Tipo prenda;
 	private Talla talla;
 
-	public Ropa(String prenda, Talla t) {
+	public Ropa(Tipo prenda, Talla t) {
 		this.prenda = prenda;
 		this.talla = t;
 	}
 
 	public String getPrenda() {
-		return prenda + " talla " + talla.toString();
+		return prenda.toString() + " talla " + talla.toString();
+	}
+
+	public void setPrenda(Tipo opcion) {
+		this.prenda = opcion;
 	}
 
 	public Talla getTalla() {
@@ -26,9 +34,11 @@ public class Ropa {
 	}
 
 	public static void main(String args[]) {
-		Ropa ropa = new Ropa("vestido", Talla.S);
+		Ropa ropa = new Ropa(Tipo.Camisa, Talla.S);
 		System.out.println(ropa.getPrenda());
 		ropa.setTalla(Talla.XL);
+		System.out.println(ropa.getPrenda());
+		ropa.setPrenda(Tipo.Chaqueta);
 		System.out.println(ropa.getPrenda());
 	}
 
