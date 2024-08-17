@@ -8,7 +8,7 @@ public class Empleado implements Calculable {
 		this.nombreCompleto = nomb;
 		this.sueldoBase = sueldoBase;
 	}
-
+// convertir String a mayusculas
 	public String getNombreCompleto() {
 		String nombreMayusculas = nombreCompleto.toUpperCase();
 		return nombreMayusculas;
