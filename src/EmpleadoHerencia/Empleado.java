@@ -1,6 +1,6 @@
 package EmpleadoHerencia;
 
-public class Empleado implements Calculable {
+public abstract class Empleado implements Calculable {
 	protected String nombreCompleto;
 	private static double sueldoBase = 1600;
 
@@ -14,6 +14,7 @@ public class Empleado implements Calculable {
 		String nombreMayusculas = nombreCompleto.toUpperCase();
 		return nombreMayusculas;
 	}
+
 //convertir solo primera letra de nombre y apellido a mayusculas
 	public String getNombreMayusculas() {
 
@@ -57,12 +58,6 @@ public class Empleado implements Calculable {
 	public String toString() {
 		return "Empleado [nombreCompleto=" + nombreCompleto + ", getNombreCompleto()=" + getNombreCompleto()
 				+ ", getSueldoBase()=" + getSueldoBase() + ", calcularSalario()=" + calcularSalario() + "]";
-	}
-
-	@Override
-	public double calcularSueldoTotal() {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 }
