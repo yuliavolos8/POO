@@ -14,7 +14,7 @@ public class Empleado implements Calculable {
 		String nombreMayusculas = nombreCompleto.toUpperCase();
 		return nombreMayusculas;
 	}
-
+//convertir solo primera letra de nombre y apellido a mayusculas
 	public String getNombreMayusculas() {
 
 		char espacio = ' ';
